@@ -26,3 +26,7 @@ flutter:
         - asset: assets/fonts/Roboto-Regular.ttf
         - asset: assets/fonts/Roboto-Medium.ttf
           weight: 700
+
+  #--------------------Importación de imagenes---------------------#
+  assets:
+    - assets/images/

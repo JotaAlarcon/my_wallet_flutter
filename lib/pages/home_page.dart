@@ -21,9 +21,38 @@ class HomePage extends StatelessWidget {
           child:  HomeAppBarTitle(),
         ),
       ),
-      body: const Center(
-        child: Text('Hello World!'),
+      body: const Column(
+        children: [
+          HomePageTopBody()
+        ]
       ),
+    );
+  }
+}
+
+class HomePageTopBody extends StatelessWidget {
+  const HomePageTopBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      width: MediaQuery.of(context).size.width,
+      transform: Matrix4.translationValues(0, -12, 0),
+      decoration: const BoxDecoration(
+        color: WalletColors.primaryColor,
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(12),
+          bottomRight: Radius.circular(12),
+        )
+      ),
+      height: 389,
+      child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          
+        ],
+        ),
     );
   }
 }
